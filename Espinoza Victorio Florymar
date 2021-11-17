@@ -1,0 +1,18 @@
+sueldo=[]
+suma=0
+sm=0
+may=0
+for i in range(0,5):
+    sueldo.append(input("Ingrese el sueldo: "))
+
+for i in sueldo:
+    suma += int(i)
+    if int(i) > 1000:
+        sm += 1
+    if int(i) >= 5000 and int(i)<=10000:
+        may += 1
+promedio=int(suma/5)
+print("")
+print("El promedio de sueldo es: ",promedio)
+print("La cantidad de sueldos mayores a 1000 es: ",sm)
+print("La cantidad de sueldos entre 5000 y 10000 es: ",may)
